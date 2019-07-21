@@ -1,0 +1,93 @@
+body {
+    overflow: hidden;
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+        background: url('../img/bg-intro-mobile.png') no-repeat;
+        background-color: #ff7a7a;
+        background-size: cover;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+.main_container {
+    width: 100%;
+    font-family: $font;
+    text-align: center;
+    .text {
+        padding: 0 12px;
+        p {
+            color: #ffffff;
+            font-weight: 400;
+            margin: 0 15px;
+        }
+    }
+    .slogan {
+        margin-top: (105 / 16) * 1em;
+        h1 {
+            font-weight: 700;
+            font-size: $bodyFontSize * 1.8;
+            color: #ffffff;
+        }
+    }
+    .card_price {
+        @include cardMix(#5d54a3, $marginFix, $boxShadow, 15px 0);
+        .text {
+            width: (220 / 16) * 1em;
+            margin: auto;
+            p span {
+                font-weight: 700;
+                font-size: $bodyFontSize - 1px;
+            }
+        }
+    }
+    .form {
+        background: #ffffff;
+        margin: $minMarginFix;
+        border-radius: $formBorderRadius;
+        box-shadow: $boxShadow;
+        form {
+            padding: 20px;
+            input[type="text"], input[type="password"], input[type="email"] {
+                padding: 12px 20px;
+                width: 100%;
+                height: 55px;
+                margin: 8px 0;
+                font-family: inherit;
+                font-weight: 700;
+                border-radius: $formBorderRadius - .1rem;
+                border: 1px solid rgba(204, 204, 204, 0.6);
+            }
+            input[type="submit"] {
+                text-transform: uppercase;
+                background: $primaryGreen;
+                width: 99%;
+                height: 55px;
+                border-radius: $formBorderRadius - .1rem;
+                color: #ffffff;
+                font-family: inherit;
+                font-weight: 600;
+                letter-spacing: 1pt;
+                font-size: $bodyFontSize - 1px;
+                border: none;
+                box-shadow: $btnShadow;
+                margin-top: 6px;
+                cursor: pointer;
+            }
+            p.terms {
+                font-size: $bodyFontSize - 5px;
+                color: $neutralGrayBlue;
+                margin: 15px auto;
+                width: 240px;
+                a {
+                    text-decoration: none;
+                    color: $primaryRed;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+
+}

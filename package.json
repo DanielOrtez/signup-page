@@ -1,0 +1,38 @@
+{
+  "name": "signupage",
+  "version": "1.0.0",
+  "description": "frontend mentor",
+  "scripts": {
+    "build:dev": "webpack --config webpack/webpack.config.prod.js --watch",
+    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js",
+    "build:": "webpack --config webpack/webpack.config.prod.js  --colors"
+  },
+  "author": "Daniel Ortez",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^3.1.0",
+    "eslint": "^6.0.1",
+    "eslint-loader": "^2.2.1",
+    "file-loader": "^4.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "core-js": "^3.1.4"
+  }
+}

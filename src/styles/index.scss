@@ -1,0 +1,42 @@
+@mixin flexAlign($first, $second) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $first;
+    align-items: $second;
+}
+
+@mixin cardMix($bgColor, $margin, $shadow, $padding) {
+    background-color: $bgColor;
+    border-radius: 10px;
+    margin: $margin;
+    padding: $padding;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: $shadow;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap');
+
+@import "variables";
+@import "layout";
+@import "mobile";
+@import "desktop";
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.error_input {
+    border: 1px solid $primaryRed !important;
+    background: url('../img/icon-error.svg') no-repeat;
+    background-position: 95% 50%;
+}
