@@ -1,42 +1,40 @@
-@mixin flexAlign($first, $second) {
-    display: flex;
-    flex-direction: column;
-    justify-content: $first;
-    align-items: $second;
-}
-
-@mixin cardMix($bgColor, $margin, $shadow, $padding) {
-    background-color: $bgColor;
-    border-radius: 10px;
-    margin: $margin;
-    padding: $padding;
-    color: #ffffff;
-    text-align: center;
-    box-shadow: $shadow;
-}
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap');
 
-@import "variables";
-@import "layout";
-@import "mobile";
-@import "desktop";
+@import "_variables";
+@import "_mixins";
+@import "_layout";
+@import "_main";
+@import "_responsive";
 
 * {
     box-sizing: border-box;
+    border: none;
 }
 
 body, html {
-    padding: 0;
-    margin: 0;
-    border: none;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: calc(100vh - 16px);
+    font-family: $font;
+    background: url('../img/bg-intro-desktop.png') no-repeat;
+    background-color: #ff7a7a;
+    background-size: cover;
+    overflow-x: hidden;
 }
+
+/** UTILITIES **/
 
 .error_input {
     border: 1px solid $primaryRed !important;
     background: url('../img/icon-error.svg') no-repeat;
     background-position: 95% 50%;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-highlight {
+    text-decoration: none;
+    color: $primaryRed;
+    font-weight: 700;
 }
