@@ -3,42 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="public/favicon.png" type="image/png" sizes="32x32">
+  <meta name="description" content="Claim your free trial">
+  <link rel="shortcut icon" href="../public/favicon.png" type="image/png" sizes="32x32">
   <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.scss">
 </head>
 <body>
-  <div class="container main">
-    <div class="columns">
-      <div class="column col-lg-12 col-6 leftside">
-        <div class="leftside--slogan">
-          <h1 class="leftside--slogan_title text-bold">Learn to code by watching others</h1>
-        </div>
-        <div class="leftside--text">
-          <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-            but understanding how developers think is invaluable.</p>
-        </div>
+  <div class="registerpage">
+    <div class="registerpage__container">
+      <div class="slogan">
+        <h1 class="slogan__title text--bold text--white">Learn to code by watching others</h1>
       </div>
-      <div class="column col-xs-12 col-6 rightside">
-          <div class="rightside_card-price">
-            <div class="rightside_card-price--text">
-                <p><span class="text-bold">Try it free 7 days</span> then $20/mo. thereafter</p>
-            </div>
-          </div>
-          <div class="rightside_form">
-            <form class="form">
-              <input type="text" placeholder="First Name" class="form_input">
-              <input type="text" placeholder="Last Name" class="form_input">
-              <input type="email" placeholder="Email Address" class="form_input">
-              <input type="password" placeholder="Password" class="form_input">
-              <input type="submit" value="claim your free trial" class="form_btn text-bold">
-              <p class="form_terms">
-                By clicking the button, you are agreeing to our&nbsp;
-                <a href="#" class="text-highlight">Terms and Services</a>
-              </p>
-            </form>
-          </div>
+      <div class="subslogan">
+        <p class="text--white">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable.</p>
       </div>
     </div>
+    <div class="registerpage__container">
+        <div class="registerpage__pricecontainer">
+          <p>
+            <span class="text--bold">Try it free 7 days</span> 
+            then $20/mo. thereafter
+          </p>
+        </div>
+        <div class="registerpage__formcontainer">
+          <form class="form" id="form">
+            <label for="name" class="form__label">Name</label>
+            <input id="name" type="text" placeholder="First Name" class="form__input text--bold">
+            <label for="surname" class="form__label">Lastname</label>
+            <input id="surname" type="text" placeholder="Last Name" class="form__input text--bold">
+            <label for="email" class="form__label">Email</label>
+            <input id="email" type="email" placeholder="Email Address" class="form__input text--bold">
+            <label for="password" class="form__label">Password</label>
+            <input id="password" type="password" placeholder="Password" class="form__input text--bold">
+            <button type="submit" class="button button--shadow text--bold button--green text--black">
+              Claim your free trial
+            </button>
+            <p class="form__terms">
+              By clicking the button, you are agreeing to our&nbsp;
+              <a href="#" class="text--highlight">Terms and Services</a>
+            </p>
+          </form>
+        </div>
+    </div>
   </div>
+  <script src="scripts/formValidation.js"></script>
 </body>
 </html>

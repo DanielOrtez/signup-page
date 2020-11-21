@@ -1,0 +1,34 @@
+.form {
+  padding: 1.25em 1.8em;
+  &__input {
+    padding: 1.25em 1.25em;
+    width: 100%;
+    margin: 0.7em 0;
+    font-family: inherit;
+    border-radius: $formInputBorderRadius;
+    border: 1px solid $gray;
+  }
+  &__label {
+    position: absolute;
+    top: -100000px;
+    left: -1000000px;
+  }
+  &__terms {
+    font-size: $termsFontSize;
+    color: $neutralGrayBlue;
+    margin: 1.2em 0;
+    text-align: center;
+  }
+}
+
+.error__input {
+  border: 1px solid $primaryRed;
+  background: $inputErrorSVG;
+  background-position: 95% 50%;
+}
+
+@media only screen and (max-width: $tablet-bp) {
+  .form {
+    padding: 20px;
+  }
+}

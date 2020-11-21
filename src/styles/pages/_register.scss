@@ -1,0 +1,49 @@
+.registerpage {
+  display: grid;
+  height: 100%;
+  align-items: center;
+  grid-template-rows: repeat(2, auto);
+  background: $mobile-bg;
+  background-size: cover;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5em;
+  }
+  &__pricecontainer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $accentBlue;
+    border-radius: 0.5em;
+    color: $white;
+    padding: .8em 1em;
+    text-align: center;
+    box-shadow: $boxShadow;
+    width: $formWidth;
+  }
+  &__formcontainer {
+    background: $white;
+    margin: $registerPageFormContainerMargin;
+    border-radius: $formBorderRadius;
+    box-shadow: $boxShadow;
+    width: $formWidthMobile;
+  }
+}
+
+@media only screen and (min-width: $tablet-bp) {
+  .registerpage {
+    &__formcontainer {
+      width: $formWidth;
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-bp) {
+  .registerpage {
+    background: $desktop-bg;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, auto);
+  }
+}

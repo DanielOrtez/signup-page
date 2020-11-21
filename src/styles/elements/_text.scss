@@ -1,0 +1,45 @@
+.slogan {
+  font-size: 24px;
+  width: 90%;
+  &__title {
+    line-height: 1.2em;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: .7em;
+  }
+}
+
+.subslogan {
+  letter-spacing: -0.01em;
+  margin: 0 1.5em;
+  text-align: justify;
+}
+
+.text {
+  &--bold, &--highlight {
+    font-weight: bold;
+  }
+  &--highlight {
+    color: $secondaryRed;
+  }
+  &--white {
+    color: $white;
+  }
+  &--black {
+    color: $black;
+  }
+}
+
+@media only screen and (min-width: $tablet-bp) {
+  .slogan {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: #{$mobile-bp+1}) {
+  .subslogan {
+    margin: 0;
+    width: 80%;
+  }
+}

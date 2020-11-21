@@ -1,17 +1,41 @@
 // -- Colors --
-$primaryRed: hsl(0, 100, 74);
-$primaryGreen: hsl(154, 59, 51);
-$accentBlue: hsl(248, 32, 49);
-$neutralDarkBlue: hsl(249, 10, 26);
-$neutralGrayBlue: hsl(246, 25, 77);
+$primaryRed: rgb(255, 122, 122);
+$secondaryRed: rgb(179, 86, 86);
+$primaryGreen: rgb(56, 204, 140);
+$accentBlue: rgb(96, 85, 165);
+$gray: rgba(204, 204, 204, 1);
+$neutralDarkBlue: rgb(62, 60, 73);
+$neutralGrayBlue: rgb(113, 111, 130);
+$white: rgb(255, 255, 255);
+$black: rgb(63, 63, 63);
+
+// -- Images --
+$desktop-bg: url("../img/bg-intro-desktop.png") no-repeat;
+$mobile-bg: url('../img/bg-intro-mobile.png') no-repeat;
 
 // -- Typographys --
 $bodyFontSize: 16px;
 $font: 'Poppins', sans-serif, monospace;
 
-// -- Extras --
-$marginFix: (40 / 16) + 1em (25 / 16) + 0em 0;
-$minMarginFix: (10 / 16) + 1em (25 / 16) + 0em 0;
+// -- Register Page --
+$registerPageFormContainerMargin: 1.6em 0.8em 0;
+$termsFontSize: 12px;
+
+// -- Shadows --
 $boxShadow: 0px 8px 2px 0px rgba(0, 0, 0, .25);
 $btnShadow: 0px 3px 2px 0px rgba(46,148,102,1);
+
+// -- Form --
+$inputErrorSVG: url('../img/icon-error.svg') no-repeat;
 $formBorderRadius: 0.4rem;
+$formInputBorderRadius: 0.3em;
+$formWidth: 80%;
+$formWidthMobile: 90%;
+
+// -- Buttons --
+$buttonRadius: 0.3em;
+
+// -- Breakpoints --
+$tablet-bp: 720px;
+$desktop-bp: 1024px;
+$mobile-bp: 428px;
